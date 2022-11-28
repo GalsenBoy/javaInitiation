@@ -5,8 +5,5 @@ public class Multiple {
         }
         //if (number)
     }
-    public static void main (String[] args){
-        int y = 1998;
-        System.out.println(y.indexOf(1));
-    }
+
 }
