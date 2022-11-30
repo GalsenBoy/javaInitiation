@@ -10,9 +10,9 @@ public class Chien {
     }
 
     public void afficheInfo() {
-        System.out.println(
-                "Je mappelle" + " " + this.name + " " + "j'ai" + " " + this.age + "ans et mes poils font :" + " "
-                        + this.taillePoile + " " + "cm");
+        StringBuilder s1 = new StringBuilder().append("Je m'appelle ").append(this.name).append(" j'ai ")
+                .append(this.age).append(" ans mes poils font ").append(this.taillePoile).append(" cm");
+        System.out.println(s1);
     }
 
     public int getAge() {
