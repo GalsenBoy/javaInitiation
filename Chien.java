@@ -1,8 +1,14 @@
+
 public class Chien {
     private String name;
     private int age;
     private double taillePoile;
 
+    /**
+     * @param name        nom du chien
+     * @param age         âge du chien
+     * @param taillePoile taille des poils du chien
+     **/
     public Chien(String name, int age, double taillePoile) {
         this.taillePoile = taillePoile;
         this.name = name;
