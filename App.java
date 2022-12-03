@@ -1,3 +1,5 @@
+import animal.*;
+
 public class App {
     public static void main(String[] args) {
         Toutou cleps1 = new Toutou("Chakaplus", 4, 1.70);

@@ -1,3 +1,4 @@
+package animal;
 
 public class Toutou {
     private String name;
