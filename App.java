@@ -1,14 +1,14 @@
 public class App {
     public static void main(String[] args) {
-        Chien cleps1 = new Chien("Chakaplus", 4, 1.70);
-        // Chien cleps2 = new Chien();
+        Toutou cleps1 = new Toutou("Chakaplus", 4, 1.70);
+        // Toutou cleps2 = new Toutou();
         cleps1.afficheInfo();
         System.out.println(cleps1.getAge());
 
-        Chien cleps2 = new Chien("felix", 2);
+        Toutou cleps2 = new Toutou("felix", 2);
         cleps2.afficheInfo();
 
-        Chien cleps3 = new Chien("jetki");
+        Toutou cleps3 = new Toutou("jetki");
         cleps3.afficheInfo();
     }
 }
