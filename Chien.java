@@ -15,6 +15,18 @@ public class Chien {
         this.age = age;
     }
 
+    public Chien(String name, int age) {
+        this.name = name;
+        this.age = age;
+        this.taillePoile = 5.5;
+    }
+
+    public Chien(String name) {
+        this.name = name;
+        this.age = 1;
+        this.taillePoile = 5.5;
+    }
+
     public void afficheInfo() {
         StringBuilder s1 = new StringBuilder().append("Je m'appelle ").append(this.name).append(" j'ai ")
                 .append(this.age).append(" ans mes poils font ").append(this.taillePoile).append(" cm");
