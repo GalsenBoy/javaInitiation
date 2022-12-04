@@ -28,16 +28,27 @@ public class Toutou {
         this.taillePoile = 5.5;
     }
 
+    /**
+     * Affiche les informations du chien
+     */
     public void afficheInfo() {
         StringBuilder s1 = new StringBuilder().append("Je m'appelle ").append(this.name).append(" j'ai ")
                 .append(this.age).append(" ans mes poils font ").append(this.taillePoile).append(" cm");
         System.out.println(s1);
     }
 
+    /**
+     * 
+     * @return l'âge du chien
+     */
     public int getAge() {
         return this.age;
     }
 
+    /**
+     * 
+     * @param age l'âge du chien
+     */
     public void setAge(int age) {
         this.age = age;
     }
