@@ -18,6 +18,7 @@ public class Lecture {
             System.out.print("Quel est votre nom : ");
             StringBuilder name = new StringBuilder(str.readLine());
             System.out.println(name);
+            wd.close();
         } catch (InputMismatchException e) {
             System.out.println(" Veuillez saisir un âge valide ");
         } catch (IOException e) {
