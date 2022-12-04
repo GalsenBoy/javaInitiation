@@ -1,4 +1,5 @@
 import animal.*;
+import cheval.*;
 
 public class App {
     public static void main(String[] args) {
@@ -10,5 +11,12 @@ public class App {
         cleps2.afficheInfo();
         Toutou cleps3 = new Toutou("jetki");
         cleps3.afficheInfo();
+
+        Horse hr = new Horse("Dior", 18, 140);
+        hr.move();
+
+        Pegasus pg = new Pegasus("Pege", 25, 180, 250);
+        pg.move();
+        pg.fly();
     }
 }
