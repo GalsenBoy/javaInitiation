@@ -20,7 +20,13 @@ public class App {
         pg.move();
         pg.fly();
 
-        Tiger tg = new Tiger("rapide", 3, 2.5, "Baguerra");
+        Tiger tg = new Tiger(3, 2.5, "Baguerra");
         tg.whoIam();
+
+        Tiger tg2 = new Tiger("rapide");
+        tg2.whoIam();
+
+        Monkey mk = new Monkey(10, 1.14, "Luffy");
+        mk.whoIam();
     }
 }
