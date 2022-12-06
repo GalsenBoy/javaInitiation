@@ -1,5 +1,6 @@
 import animal.*;
 import cheval.*;
+import myabstract.*;
 
 public class App {
     public static void main(String[] args) {
@@ -18,5 +19,14 @@ public class App {
         Pegasus pg = new Pegasus("Pege", 25, 180, 250);
         pg.move();
         pg.fly();
+
+        Tiger tg = new Tiger(3, 2.5, "Baguerra");
+        tg.whoIam();
+
+        Tiger tg2 = new Tiger("rapide");
+        tg2.whoIam();
+
+        Monkey mk = new Monkey(10, 1.14, "Luffy");
+        mk.whoIam();
     }
 }

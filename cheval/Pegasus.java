@@ -18,6 +18,8 @@ public class Pegasus extends Horse {
      * Affiche la hauteur du pégase
      */
     public void fly() {
-        System.out.println(this.name + " se trouve à une altitude de " + this.poxZ);
+        StringBuilder fl = new StringBuilder().append(this.name).append(" se trouve à une altitude de ")
+                .append(this.poxZ);
+        System.out.println(fl);
     }
 }

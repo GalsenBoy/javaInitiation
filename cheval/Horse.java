@@ -20,7 +20,9 @@ public class Horse {
      * Affiche le déplacement du joueur
      */
     public void move() {
-        System.out.println(this.name + " se trouve à la position : PosX = " + this.posX + " PosY = " + this.posY);
+        StringBuilder mv = new StringBuilder().append(this.name).append(" se trouve à la position : PosX = ")
+                .append(this.posX).append("  PosY = ").append(this.posY);
+        System.out.println(mv);
     }
 
 }
