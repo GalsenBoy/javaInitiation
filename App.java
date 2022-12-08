@@ -28,5 +28,13 @@ public class App {
 
         Monkey mk = new Monkey(10, 1.14, "Luffy");
         mk.whoIam();
+
+        Bird br = new Bird(7, 0.7, "Luci");
+        br.fly(50);
+        br.whoIam();
+
+        Eagle eg = new Eagle(13, 1.20, "King");
+        eg.fly(95);
+        eg.whoIam();
     }
 }
