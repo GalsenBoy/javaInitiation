@@ -2,10 +2,10 @@ package myabstract;
 
 public class Bird extends LivingSpecies implements Fly {
     /**
-     * @param walk   La manière dont marche le Tigre
-     * @param age    L'âge du Tigre
-     * @param taille La taille du Tigre
-     * @param name   Le nom du Tigre
+     * @param walk   La manière dont marche l'Oiseau
+     * @param age    L'âge de l'Oiseau
+     * @param taille La taille de l'Oiseau
+     * @param name   Le nom de l'Oiseau
      */
     public Bird(int age, double taille, String name) {
         super("lent", age, taille, name);
