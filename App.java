@@ -20,21 +20,23 @@ public class App {
         pg.move();
         pg.fly();
 
-        Tiger tg = new Tiger(3, 2.5, "Baguerra");
-        tg.whoIam();
+        LivingSpecies[] ls = new LivingSpecies[5];
+        ls[0] = new Tiger(3, 2.5, "Baguerra");
+        ls[1] = new Tiger("rapide");
+        ls[2] = new Monkey(10, 1.14, "Luffy");
+        ls[3] = new Bird(7, 0.7, "Luci");
+        ls[4] = new Eagle(13, 1.20, "King");
 
-        Tiger tg2 = new Tiger("rapide");
-        tg2.whoIam();
-
-        Monkey mk = new Monkey(10, 1.14, "Luffy");
-        mk.whoIam();
-
-        Bird br = new Bird(7, 0.7, "Luci");
-        br.fly(50);
-        br.whoIam();
-
-        Eagle eg = new Eagle(13, 1.20, "King");
-        eg.fly(95);
-        eg.whoIam();
+        Fly[] fl = { new Bird(0, 0, null), new Eagle(0, 0, null) };
+        // ls[0].whoIam();
+        // ls[1].whoIam();
+        // ls[2].whoIam();
+        // ls[3].whoIam();
+        // ls[4].whoIam();
+        fl[0].fly(50);
+        fl[1].fly(95);
+        for (int i = 0; i < ls.length; i++) {
+            ls[i].whoIam();
+        }
     }
 }
