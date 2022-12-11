@@ -63,14 +63,12 @@ public class App {
         Pegasus p2 = new Pegasus("Rvaen", 12, 100, 0);
         Pegasus p3 = new Pegasus("Tuti", 12, 100, 0);
 
-        peg.add(p3);
-        peg.add(p2);
+        peg.addFirst(p3);
+        peg.addLast(p2);
         peg.add(p1);
 
         ListIterator<Pegasus> litPeg = peg.listIterator();
-
         while (litPeg.hasNext())
             litPeg.next().fly();
-
     }
 }

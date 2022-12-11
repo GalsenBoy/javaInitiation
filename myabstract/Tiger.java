@@ -1,10 +1,8 @@
 package myabstract;
 
-import java.io.Console;
-
 public class Tiger extends LivingSpecies {
 
-    private String scream;
+    // private String scream;
 
     /**
      * 
@@ -15,7 +13,7 @@ public class Tiger extends LivingSpecies {
      */
     public Tiger(int age, double taille, String name) {
         super("rapide", age, taille, name);
-        this.scream = "rugi";
+        // this.scream = "rugi";
     }
 
     /**

@@ -1,3 +1,5 @@
+package exo;
+
 public class Multiple {
     static void mulipleDe(int number) {
         if (number % 5 == 0) {
