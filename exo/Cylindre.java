@@ -1,3 +1,5 @@
+package exo;
+
 public class Cylindre {
     static double aireVolume(double rayon, double hauteur) {
         double aire = rayon * rayon * 3.14;

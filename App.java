@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 import animal.*;
 import cheval.*;
 import myabstract.*;
@@ -38,5 +42,33 @@ public class App {
         for (int i = 0; i < ls.length; i++) {
             ls[i].whoIam();
         }
+        ArrayList<Horse> hList = new ArrayList<Horse>();
+
+        Horse h1 = new Horse("Gimbe", 0, 0);
+        Horse h2 = new Horse("Rastop", 0, 0);
+        Horse h3 = new Horse("Baup", 0, 0);
+
+        hList.add(h1);
+        hList.add(h2);
+        hList.add(h3);
+
+        for (Horse horse : hList) {
+            horse.move();
+        }
+        hList.remove(h2);
+
+        LinkedList<Pegasus> peg = new LinkedList<Pegasus>();
+
+        Pegasus p1 = new Pegasus("Bolt", 12, 100, 0);
+        Pegasus p2 = new Pegasus("Rvaen", 12, 100, 0);
+        Pegasus p3 = new Pegasus("Tuti", 12, 100, 0);
+
+        peg.addFirst(p3);
+        peg.addLast(p2);
+        peg.add(p1);
+
+        ListIterator<Pegasus> litPeg = peg.listIterator();
+        while (litPeg.hasNext())
+            litPeg.next().fly();
     }
 }
